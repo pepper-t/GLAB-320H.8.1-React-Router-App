@@ -10,9 +10,7 @@ export default function Nav() {
       <Link to="/currencies">
         <div>CURRENCIES</div>
       </Link>
-      <Link to="/price">
-        <div>PRICES</div>
-      </Link>
+      
     </div>
   );
 }
