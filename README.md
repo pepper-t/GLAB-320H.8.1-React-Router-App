@@ -1,16 +1,19 @@
-# React + Vite
+# React Router App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I followed the instructions from the React Router (320H.8) GLAB to create a
+multipage React application.
 
-Currently, two official plugins are available:
+# Debugging The Errors
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The pages kept appearing blank for the url: http://localhost:5174
 
-## React Compiler
+Google dev tools indicated an error with index.html still referring
+to main.jsx rather than index.jsx from the instructions.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The GLAB instructions still used ./App.css in App.jsx, which contradicted the instructions, to ./style.css
 
-## Expanding the ESLint configuration
+In index.jsx, Google dev tools took issue with ReactDOM.render {} saying it did not exist.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Shortcut: I copy-pasted the <Browser Router> wrap for <App /> from the React Router Lesson (SpongeBob/Movie db) in class. I edited the App wrap so that <Browser Router> became <Router>, according to the instructions.
+
+Now, the complete webpage appears in http://localhost:5174
