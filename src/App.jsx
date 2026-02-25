@@ -1,4 +1,4 @@
-import "./Style.css";
+import "./style.css";
 
 // Import Route and our components
 import { Route, Routes } from "react-router-dom";
