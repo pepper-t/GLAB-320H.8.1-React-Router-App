@@ -13,7 +13,7 @@ export default function Price () {
   const url = `http://rest-sandbox.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`;
 
   // State to hold the coin data.
-  const [coin, setCoin] = useState("null");
+  const [coin, setCoin] = useState(null);
 
   // Function to fetch coin data.
   const getCoin = async () => {

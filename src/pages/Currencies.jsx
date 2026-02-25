@@ -19,7 +19,7 @@ export default function Currencies() {
 
         return (
           <Link to={`/price/${symbol}`}>
-            <h2>{name}</h2>
+            <h2>{name} ({symbol})</h2>
           </Link>
         );
       })}
