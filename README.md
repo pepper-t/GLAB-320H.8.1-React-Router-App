@@ -16,4 +16,13 @@ In index.jsx, Google dev tools took issue with ReactDOM.render {} saying it did 
 
 Shortcut: I copy-pasted the <Browser Router> wrap for <App /> from the React Router Lesson (SpongeBob/Movie db) in class. I edited the App wrap so that <Browser Router> became <Router>, according to the instructions.
 
+I consulted Claude.ai about why the symbols never appeared.
+a.) In Currencies.jsx (line 18), {name} is returned but, not symbol. I updated it so that both name and symbol appear.
+
+b.) In Prices.jsx (line 16), useState("null") was incorrect by making null a string. I removed the quotes.
+
+
 Now, the complete webpage appears in http://localhost:5174
+
+# Other Updates
+I erroneously included a link to Prices.jsx in /components/Nav.jsx. I removed it.
